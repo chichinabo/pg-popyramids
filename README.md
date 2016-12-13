@@ -1,2 +1,2 @@
-# pg-popyramids
-postgres extension to create a popyramids database
+# pg_popyramids
+Combine this postgres extension with pg_chichinabo_dw to store and analyze population pyramids.
