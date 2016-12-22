@@ -1,4 +1,4 @@
-comment = 'A PostgreSQL extension for managing population pyramids in a dw database'
+comment = 'A PostgreSQL extension for working with population pyramids in a pg_dw database'
 default_version = '0.0.1'
 relocatable = false
 requires = 'postgis'

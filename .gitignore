@@ -1,3 +1,17 @@
+results/
+*.so
+tmp/
+*.o
+regression.diffs
+regression.out
+/sql/range_partitioning--*
+!/sql/range_partitioning--*--*.sql
+*~
+
+pg_popyramids--*.sql
+
+
+# Rstudio may be used to read compile documentation
 # History files
 .Rhistory
 .Rapp.history
