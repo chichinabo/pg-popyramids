@@ -1,20 +1,19 @@
 FROM benizar/pg_dw
 MAINTAINER Benito Zaragozí <benizar@gmail.com>
 
-######################
-# Versions and sources
-######################
-#from https://github.com/benizar/
-ENV SOURCE https://github.com/benizar/
-ENV POPYRAMIDS https://github.com/benizar/pg_popyramids.git
-
 
 ################
 # Install pg_popyramids
 ################
 WORKDIR /install-ext
-RUN git clone $POPYRAMIDS
-WORKDIR /install-ext/pg_popyramids
+
+ADD doc doc/
+ADD sql sql/
+ADD test test/
+ADD makefile makefile
+ADD META.json META.json
+ADD pg_popyramids.control pg_popyramids.control
+
 RUN make
 RUN make install
 

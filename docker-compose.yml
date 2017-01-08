@@ -4,7 +4,7 @@ services:
   # [ server stack ]
   #
   # - postgres/postgis
-  # - pg_dw
+  # - pg_popyramids
   #
 
   db:
