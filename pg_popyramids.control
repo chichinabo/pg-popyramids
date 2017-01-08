@@ -1,4 +1,5 @@
 comment = 'A PostgreSQL extension for working with population pyramids in a pg_dw database'
 default_version = '0.0.1'
 relocatable = false
-requires = 'postgis'
+requires = 'postgis, pgcrypto, plpython3u, bedquilt, pg_geohash_extra, pg_dw'
+schema = dms
