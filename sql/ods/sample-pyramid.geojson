@@ -1,35 +1,40 @@
 {
   "type": "FeatureCollection",
+  "bbox": [100.0, 0.0, 105.0, 1.0],
   "features": [
     {
       "type": "Feature",
+      "bbox": [100.0, 0.0, 105.0, 1.0],
       "properties": {
-        "uploader": "Benito Zaragozí",
         
-        "provider": "INE (Spain)",
-        "provider_short": "INE",
+        "schemaVersion": 1,
         
-        "project": "Censo de población y vivienda (2011)",
-        "project_short": "census_2011",
+        "type": "PyramidCollection",
+        "dateRef":"Reference date for this pyramid.",
+        "name":"full geoname",
+        "alternateName":"short geoname or code",
         
-        "refdate": "2011-01-01T18:25:43.511Z",
-        "uploaded": "2012-04-23T18:25:43.511Z",
-
-        "xx": [
-          100,
-          200,
-          100
-        ],
-        "xy": [
-          100,
-          200,
-          100
-        ],
-        "ages": [
-          "[0,16)",
-          "[16,65)",
-          "[65,)"
+        "pyramids":[
+          {
+            "type":"percentages",
+            "xx":[
+              10,
+              30,
+              10
+            ],
+            "xy":[
+              10,
+              30,
+              10
+            ],
+            "ages": [
+              "[0,16)",
+              "[16,65)",
+              "[65,)"
+            ]
+          }
         ]
+        
       },
       "geometry": {
         "type": "Polygon",
@@ -147,5 +152,55 @@
         ]
       }
     }
-  ]
+  ],
+  "properties":{
+    "schemaVersion": 1,
+    
+    "name":"Censo de población y vivienda (2011)",
+    "alternateName":"censo_2011",
+    "description":"Este censo contiene...",
+    "url":"www.ine.es/download",
+
+    "dateCreated":"The date on which the CreativeWork was created or the item was added to a DataFeed.",
+    "dateModified":"The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.",
+    "datePublished":"Date of first broadcast/publication.",
+    
+    "contentSize":"File size in (mega/kilo) bytes.",
+    "contentUrl":"Actual bytes of the media object, for example the image file or video file.",
+    "encodingFormat":"mp3, mpeg4, etc.",
+    "uploadDate":"Date when this media object was uploaded to this site.",
+    "fileFormat":"text/csv",
+    "inLanguage":"es-ES",
+    
+    "accountablePerson":"Specifies the Person that is legally accountable for the CreativeWork.",
+
+    "author":{
+      "name":"Instituto Nacional de Estadística",
+      "alternateName":"INE (Spain)",
+      "url":"www.ine.es",
+      "department":"Oficina del Censo...",
+      "email":"info@ine.es"
+    },
+    "contributor":{
+      "name":"Instituto Nacional de Estadística",
+      "alternateName":"INE (Spain)",
+      "url":"www.ine.es",
+      "department":"Oficina del Censo...",
+      "email":"info@ine.es"
+    },
+    "editor":{
+      "name":"Benito Zaragozí",
+      "alternateName":"benizar",
+      "url":"www.benito-zaragozi.com",
+      "department":"Oficina del Censo...",
+      "email":"benizar@gmail.com"
+    },
+    "sourceOrganization":{
+      "name":"chichinabo.org",
+      "url":"www.chichinabo.org",
+      "email":"chichinabo@gmail.com"
+    }
+  }
+  
+  
 }
